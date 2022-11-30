@@ -11,7 +11,7 @@ RUN apt update \
     && apt install -yq --no-install-recommends --allow-unauthenticated \
         supervisor nginx sudo net-tools zenity xz-utils \
         dbus-x11 x11-utils screen git locales \
-        mesa-utils libgl1-mesa-dri openssh-server \
+        mesa-utils libgl1-mesa-dri openssh-server apt-utils \
     && apt autoclean -y \
     && apt autoremove -y \
     && rm -rf /var/lib/apt/lists/*
