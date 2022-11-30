@@ -12,7 +12,7 @@ RUN apt update \
         supervisor nginx sudo net-tools zenity xz-utils \
         dbus-x11 x11-utils screen git locales \
         mesa-utils libgl1-mesa-dri openssh-server \
-        lsb-release net-tools \
+        lsb-release net-tools apt-utils \
     && apt autoclean -y \
     && apt autoremove -y \
     && rm -rf /var/lib/apt/lists/*
